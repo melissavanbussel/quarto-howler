@@ -1,0 +1,21 @@
+<script src="https://cdn.jsdelivr.net/npm/howler@2.2.4/dist/howler.min.js"></script>
+
+<div style="text-align-center; margin-top: 20px;">
+  <button onclick="playAudio()">Play Audio</button>
+  <button onclick="pauseAudio()">Pause Audio</button>
+</div>
+
+<script>
+  const sound = new Howl({
+    src: ['https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3']
+  });
+  
+  function playAudio() {
+    sound.play();
+  }
+  
+  function pauseAudio() {
+    sound.pause();
+  }
+  
+</script>
